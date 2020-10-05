@@ -22,3 +22,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/test/show', 'TestController@index');
+Route::post('/send/mail', 'TestController@sendMail')->name('testMail');
